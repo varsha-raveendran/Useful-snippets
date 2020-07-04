@@ -1,6 +1,6 @@
 # Useful Tips  
 
-1. Git commands (git-commands.txt)
+1. [Git commands] (git-commands.txt)
 
 
 
