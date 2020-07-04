@@ -2,7 +2,7 @@
 
 Link: Git & GitHub Crash Course For Beginners [https://www.youtube.com/watch?v=SWYqp7iY_Tc]
 
-Basic
+#Basic
 ---------------------
 git init
 git add <file> #Add to Index
@@ -17,7 +17,15 @@ git rm --cached <file> #Remove from staging area
 
 touch .gitignore
 
-Branching
+#Branching
 ----------------------
 git branch <name>
+
+#Remote
+-----------------------
+git remote add origin <link>
+
+git push -u origin master
+
+
 
