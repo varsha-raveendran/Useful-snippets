@@ -24,8 +24,24 @@ git branch <name>
 #Remote
 -----------------------
 git remote add origin <link>
-
 git push -u origin master
 
+#Merge
+-----------------------
+* Merging takes contents of source branch and integrates them with target branch. 
+* Only the target branch is changed. The source branch history remains the same
+Ref: freecodecamp
+
+git checkout feature
+git merge master
+
+OR
+
+git merge master feature
+
+#Rebase
+-----------------------
+git pull --rebase origin master
+git push origin master
 
 
