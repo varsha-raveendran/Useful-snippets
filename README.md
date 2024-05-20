@@ -1,6 +1,6 @@
 # Useful Tips  
 
-[Git commands](git-commands.txt)
+[Git commands](git-commands.md)
 
 
 
