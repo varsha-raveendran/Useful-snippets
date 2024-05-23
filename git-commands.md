@@ -91,13 +91,16 @@ git diff <commit id> HEAD
 git difftool <commit id> HEAD # opens a ui
 git diff # shows recent changes in working dir
 git difftool
+git diff <branch1> <branch2> # compares branches
 ```
 
 # Branching
 ----------------------
+Branch - Timeline of commits
 ```
-git branch <name>
-
+git branch <name> # create branch
+git checkout -b <name> # creates and switches to new branch, carries modifications to new branch
+git branch -d <branch>
 ```
 
 # Remote
@@ -107,20 +110,31 @@ git remote add origin <link>
 git push -u origin master
 ```
 
+# Special Markers/Pointers
+-----------------------
+* HEAD - points to last commit of current branch and can be moved/advanced
+
+
 # Merge
 -----------------------
 * Merging takes contents of source branch and integrates them with target branch. 
 * Only the target branch is changed. The source branch history remains the same
+* Scenarios:
+  *   Fast-forward - Applies all commits from branch to main branch as if we never branched out; done when no other commits were made to main
+  *   Automatic - new merge commit is created, when no conflict 
+  *   Manual - manual merge commit, when conflicts occur
+    
 Ref: freecodecamp
 ```
-git checkout feature
-git merge master
+git checkout master
+git merge feature
 ```
 
 OR
 ```
 git merge master feature
 ```
+
 
 # Rebase
 -----------------------
